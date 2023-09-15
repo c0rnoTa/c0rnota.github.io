@@ -1,0 +1,87 @@
+/* BEGIN (write your solution here) */
+@font-face {
+  font-family: Brygada;
+  src: url("../assets/fonts/Brygada-1918.woff2") format(woff2);
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url("../assets/fonts/OpenSans-Regular.woff2") format(woff2);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url("../assets/fonts/OpenSans-Bold.woff2") format(woff2);
+  font-weight: 700;
+}
+
+:root {
+  --primary: #f7df1e;
+}
+
+body {
+  background-color: #0b1d26;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  font-family: OpenSans, sans-serif;
+  color: #fff;
+  line-height: 2.3;
+}
+
+/* Базовые настройки макета */
+main {
+  width: 1280px;
+  padding: 100px 0;
+  columns: 2;
+  column-width: 50%;
+}
+
+.column {
+  padding: 0 30px;
+  height: 713px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right {
+  text-align: right;
+}
+
+/* Дальше начинается какой-то ад */
+.title {
+  font-family: Brygada, serif;
+  font-size: 64px;
+  line-height: 70px;
+  height: 145.39px;
+  margin: 17px 0 0;
+}
+
+.description {
+  font-family: OpenSans, sans-serif;
+  font-size: 16px;
+  margin: 71.4px 0 0;
+
+  /* height: 132.4px; */
+}
+
+.cta {
+  font-family: OpenSans, sans-serif;
+  font-size: 17px;
+  color: var(--primary);
+  margin: 31.8px 0 0;
+  height: 23px;
+}
+
+.cta > span {
+  font-family: Roboto, sans-serif;
+  font-size: 26px;
+  margin: 0 0 0 10px;
+}
+
+/* END */
